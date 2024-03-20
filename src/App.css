@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* SortSidebar.css */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  z-index: 1000;
+}
+
+:root {
+  --SideNav-Bg: #1e2640;
+  --Item-Bg: #353c53;
+  --Icon-Bg: rgba(255, 255, 255, 0.1);
+  --Text-Color-White: #fff;
+  --Icon-Color: #ffffff;
+  --Text-Color-Black: #1a181e;
+  --Text-Color-Grey: #4d4d4d;
+  --Main-Bg: #fafafa;
+  --Border-Color: #d9d9d9;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+.App-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: var(--Main-Bg);
+  position: relative;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #d9d9d9;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--SideNav-Bg);
+  
+}
+
+
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
