@@ -1,23 +1,11 @@
 // SortSidebar.js
-import React from 'react';
-import { Drawer, List, ListItem, ListItemText, IconButton } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+import React from "react";
+import { Drawer, List, ListItem, ListItemText, Divider } from "@mui/material";
 
-const SortSidebar = ({ sortOptions, onSelectSort, onClose, open }) => {
+const SortSidebar = ({ sortOptions, onSelectSort, open, onClose }) => {
   return (
     <Drawer anchor="right" open={open} onClose={onClose}>
-      <div>
-        <IconButton onClick={onClose}>
-          <CloseIcon />
-        </IconButton>
-      </div>
-      <List>
-        {sortOptions.map(option => (
-          <ListItem button key={option} onClick={() => onSelectSort(option)}>
-            <ListItemText primary={option} />
-          </ListItem>
-        ))}
-      </List>
+      
     </Drawer>
   );
 };

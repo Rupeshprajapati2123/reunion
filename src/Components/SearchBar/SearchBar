@@ -1,0 +1,22 @@
+// SearchBar.js
+import React from "react";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+
+const SearchBar = ({ value, onChange }) => {
+  return (
+    <div className="payments-transacions-main-search">
+      <SearchOutlinedIcon
+        style={{ fontSize: "16px", color: "#808080", cursor: "pointer" }}
+      />
+      <input
+        type="text"
+        placeholder="Search by order ID..."
+        className="payments-transacions-main-search-text"
+        value={value}
+        onChange={onChange}
+      />
+    </div>
+  );
+};
+
+export default SearchBar;
