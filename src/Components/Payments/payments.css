@@ -234,3 +234,11 @@
 .payments-transacions-main-Icon-text {
   margin-right: 10px;
 }
+
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

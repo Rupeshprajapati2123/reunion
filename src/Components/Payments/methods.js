@@ -52,17 +52,6 @@ export const handleSort = (column, sortColumn, sortOrder, setSortColumn, setSort
     setFilteredRows(filteredRows);
   };
   
-  export const handleSubcategoryChange = (event, rows, setSelectedSubcategory, setCurrentPage, setFilteredRows) => {
-    const subcategory = event.target.value;
-    setSelectedSubcategory(subcategory);
-    setCurrentPage(1);
-  
-    const filteredRows = rows.filter((row) => {
-      return row.subcategory === subcategory;
-    });
-  
-    setFilteredRows(filteredRows);
-  };
   
   export const handleFieldChange = (event, rows, setSelectedField, setCurrentPage, setFilteredRows) => {
     const field = event.target.value;
